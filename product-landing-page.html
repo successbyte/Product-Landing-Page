@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- getting Poppins font from google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <!-- gettings icons frome fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- meta for better view in different diveces -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta for language encodding -->
+    <meta charset="utf-8" />
+    <!-- title of page at browser tab -->
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <!-- header with navber links -->
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+      />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Featutes</a>
+        <a class="nav-link" href="#how-it-works">How It Works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
+    <!-- main body of page -->
+    <main id="main-doc">
+      <!-- getting started section with an email input and a submit -->
+      <div class="get-started">
+        <h1 class="page-title">Handcrafted, home-made masterpieces</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <!-- email is required -->
+          <input
+            type="email"
+            required
+            placeholder="Enter your email Address"
+            name="email"
+            id="email"
+          />
+          <!-- submit -->
+          <input
+            class="get-started"
+            type="submit"
+            name="submit"
+            id="submit"
+            value="GET STARTED"
+          />
+        </form>
+      </div>
+      <!-- three features part with icons -->
+      <div class="features" id="features">
+        <!-- first features part -->
+        <div class="features-div">
+          <!-- fire icon -->
+          <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+          <div class="icon-text">
+            <h1 class="bold-larg-center">Premium Materials</h1>
+            <p class="simple-center-text">
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+        </div>
+        <!-- second features part -->
+        <div class="features-div">
+          <!-- car icon -->
+          <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+          <div class="icon-text">
+            <h1 class="bold-larg-center">Fast Shipping</h1>
+            <p class="simple-center-text">
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+        </div>
+        <!-- third features part -->
+        <div class="features-div">
+          <!-- battery icons -->
+          <div class="icon">
+            <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+          </div>
+          <div class="icon-text">
+            <h1 class="bold-larg-center">Quality Assurance</h1>
+            <p class="simple-center-text">
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- how it works is second part of main -->
+      <div class="how-it-works" id="how-it-works">
+        <!-- getting a vedio from youtube -->
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!-- third part of main
+            pricing part of products -->
+      <div class="pricing" id="pricing">
+        <!-- first pricing product -->
+        <div class="tenor-trombone trombone">
+          <h2 class="tombone-h2">TENOR TROMBONE</h2>
+          <h2 class="trombone-dollar">$600</h2>
+          <p class="trombone-p">
+            Lorem ipsum. <br />Lorem ipsum. <br />Lorem ipsum dolor. <br />Lorem
+            ipsum.
+          </p>
+          <button
+            class="trombone-button"
+            type="submit"
+            name="select"
+            id="select-600"
+            value="SELECT"
+          >
+            SELECT
+          </button>
+        </div>
+        <!-- second pricing product -->
+        <div class="bass-trambone trombone">
+          <h2 class="tombone-h2">BASS TROMBONE</h2>
+          <h2 class="trombone-dollar">$900</h2>
+          <p class="trombone-p">
+            Lorem ipsum. <br />Lorem ipsum. <br />Lorem ipsum dolor. <br />Lorem
+            ipsum.
+          </p>
+          <button
+            class="trombone-button"
+            type="submit"
+            name="select"
+            id="select-600"
+            value="SELECT"
+          >
+            SELECT
+          </button>
+        </div>
+        <!-- third pricing product -->
+        <div class="valve-trombone trombone">
+          <h2 class="tombone-h2">VALVE TROMBONE</h2>
+          <h2 class="trombone-dollar">$1200</h2>
+          <p class="trombone-p">
+            Plays similar to a Trumpet
+            <br />Great for Jazz Bands <br />Lorem ipsum dolor. <br />Lorem
+            ipsum.
+          </p>
+          <button
+            class="trombone-button"
+            type="submit"
+            name="select"
+            id="select-600"
+            value="SELECT"
+          >
+            SELECT
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- pages footer with three links -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="https://product-landing-page.freecodecamp.rocks/#">Privacy</a>
+        <a href="https://product-landing-page.freecodecamp.rocks/#">Terms</a>
+        <a href="https://product-landing-page.freecodecamp.rocks/#">Contact</a>
+      </div>
+      <div class="footer-text"><p>Copyright 2016, Original Trombones</p></div>
+    </footer>
+  </body>
+</html>

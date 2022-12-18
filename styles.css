@@ -1,0 +1,325 @@
+/* html root colors */
+:root {
+    --color-background: #eeeeee;
+    --color-white: #FFFFFF;
+    --color-icons: #ff8c00;
+    --color-text: #616267;
+    --color-button: #f1c40f;
+    --color-little-dark: #dddddd;
+}
+
+/* set the margins and paddings to zero */
+* {
+    box-sizing: border-box;
+}
+
+/* page scrolling to be smooth and a little beautiful */
+html {
+    scroll-behavior: smooth;
+}
+
+/* color
+   font
+   line height */
+body {
+    background: var(--color-background);
+    font-family: Poppins, sans-serif;
+    margin: 0;
+}
+
+/* header with display of flex */
+#header {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: var(--color-background);
+}
+
+/* website logo image */
+#header-img {
+    margin-top: 15px;
+    width: 300px;
+    height: auto;
+}
+
+/* navbar of flex */
+#nav-bar {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* navbar links with no decoration and black */
+#nav-bar .nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+/* pushing main body 150px from top */
+#main-doc {
+    margin-top: 150px;
+}
+
+/* changing header and navbar setup 
+   when width is more than 600px */
+@media (min-width: 600px) {
+    #header {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 85px;
+    }
+
+    #nav-bar {
+        font-weight: 500;
+        width: 40%;
+        justify-content: space-around;
+    }
+}
+
+/* changing header and navbar setup 
+   when width is more than 655px */
+@media (min-width: 655px) {
+    #header {
+        justify-content: space-around;
+        height: 75px;
+    }
+
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+        /* align-items: ; */
+    }
+
+    #main-doc {
+        margin-top: 95px;
+    }
+
+}
+
+/* main body title */
+.page-title {
+    text-align: center;
+    font-size: 21px;
+}
+
+/* email and submit input */
+form input {
+    display: block;
+    margin: 15px auto;
+}
+
+/* email input setup */
+form input[type="email"] {
+    width: 260px;
+    padding: 5px;
+}
+
+/* email input hover
+it changes color and border radius */
+form input[type="email"]:hover {
+    transition: 1000ms;
+    border-radius: 5px;
+    background-color: var(--color-background);
+}
+
+/* submit input setup */
+form input[type="submit"] {
+    width: 160px;
+    padding: 5px;
+    font-weight: 900;
+    background-color: var(--color-button);
+    border: none;
+}
+
+/* submit input hover
+changes color and border radius */
+form input[type="submit"]:hover {
+    transition: 1000ms;
+    border-radius: 5px;
+    background-color: var(--color-icons);
+}
+
+/* features headings
+ a little larg and centered */
+.bold-larg-center {
+    margin: 70px 0 0 0;
+    text-align: center;
+    padding: 0;
+    font-size: 22px;
+}
+
+/* features text
+centered and small text */
+.simple-center-text {
+    text-align: center;
+    font-size: 14px;
+    padding: 0;
+    margin: 0 5px;
+}
+
+/* three icons setup */
+.icon {
+    display: none;
+    color: var(--color-icons);
+}
+
+/* features part */
+.features {
+    margin: 0 auto;
+    max-width: 970px;
+}
+
+/* setting up some parts
+    when width is more than 550px */
+@media (min-width: 550px) {
+    .icon {
+        text-align: center;
+        display: block;
+        width: 70px;
+    }
+
+    .icon-text {
+        width: 70%;
+    }
+
+    .features-div {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 70px;
+    }
+
+    .simple-center-text,
+    .bold-larg-center {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .features {
+        margin-top: 80px;
+    }
+}
+
+/* how-it-works part with a youtube vedio */
+.how-it-works iframe {
+    width: 100%;
+    height: 315px;
+    display: block;
+    margin: 90px auto 50px auto;
+    max-width: 570px;
+}
+
+/* thrombones part
+three of theme with different prices */
+.trombone {
+    margin: 10px auto;
+    background-color: var(--color-background);
+    border: 1px solid #616267;
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+}
+
+/* tombone headings setup */
+.tombone-h2 {
+    background-color: var(--color-little-dark);
+    margin: 0;
+    padding: 10px 0;
+    font-size: large;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* trombone prices */
+.trombone-dollar {
+    text-align: center;
+    margin: 10px;
+}
+
+/* trombone text (description) */
+.trombone-p {
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* trombone buttons setup */
+.trombone-button {
+    display: block;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border: none;
+    background-color: var(--color-button);
+    border-radius: 2px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+/* trombone buttons hover
+ changes color and border radius */
+.trombone-button:hover {
+    transition: 1000ms;
+    border-radius: 5px;
+    background-color: var(--color-icons);
+}
+
+/* changing trombone when width is more than 800px */
+@media(min-width: 800px) {
+    .pricing {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .trombone {
+        width: 31%;
+        max-width: 300px;
+    }
+}
+
+/* footer with a little dark background */
+.footer {
+    background-color: var(--color-little-dark);
+    margin: 40px auto 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.footer-links {
+    text-align: right;
+    margin: 20px 30px 0 0;
+
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+    align-items: center;
+}
+
+.footer-text {
+    text-align: right;
+    color: var(--color-text);
+    font-size: small;
+    margin-right: 30px;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.footer-text p {
+    margin-top: 0;
+}
